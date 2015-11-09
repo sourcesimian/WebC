@@ -1,0 +1,78 @@
+/*
+Font Family Examples:
+ 	font-family:"Times New Roman","Georgia", serif
+ 	font-family:"Arial","Veranda",sans-serif
+ 	font-family:"Lucida Console","Courier New",monospace
+*/
+
+body, html{margin:0; padding:0;}
+body {background-color:#cc9966; height:100%;}
+body,td,p {color:#000000; font-size:100%; font-style:normal; font-family:"Times New Roman","Georgia", serif}
+
+a {font-size:90%; font-style:normal; font-family:"Arial","Veranda",sans-serif; }
+a:link      { color:#ffffff; text-decoration: none; outline-style: none; }
+a:visited   { color:#ffff00; text-decoration: none; outline-style: none; }
+a:active    { color:#dddd00; text-decoration: underline; outline-style: none; }
+a:hover     { color:#dddd00; text-decoration: underline; outline-style: none; }
+
+a img{border-width:0px; vertical-align:middle;} 
+
+#header, #footer { font-size:14px; font-decoration:none; font-weight: normal; font-family:"Arial","Veranda",sans-serif}
+#header a,#footer a {color:#ffff00 !important; margin: 0 5px 0 5px;}
+#header {background-color:#bb8855; height:44px; padding:1px 0 0 0 !important;}
+#footer {background-color:#bb8855; position:relative; height:44px; left:0; right:0; width:100%; border-top:1px solid #aa7744; padding:0 0px 6px 0px;}
+  #headerLine {top:44px; border-top:1px solid #aa7744; height:1px; position:absolute; left:0; right:0; width:100%;}
+  #headerLeft  {height:42px; margin:1px 10px 0 10px;}
+  #headerRight {height:42px; margin:3px 10px 0 10px;}
+  #headerLeft  {float:left;}
+  #headerRight {padding-bottom:7px !important; text-align:right}
+  #headerLeft a  {zoom:1; margin-right:.5em;} 
+  #headerRight a {zoom:1; margin-right:.5em;} 
+  #footerLeftImg  {float:left;  padding: 3px 10px;}
+  #footerRightImg {float:right; padding: 3px 10px;}
+  #footerLeft     {float:left;  text-align:left;  padding: 1px 5px;}
+  #footerRight    {float:right; text-align:right; padding: 1px 5px;}
+  #footerCenter   {padding: 0 auto; margin-top:12px; text-align:center;}
+
+#content {margin:3px 10px 3px 10px;}
+#content img{display: block; margin: 0 auto; border:0;}
+#content a.external { background: url(externalLink.png) center right no-repeat; padding-right:13px;}
+#content a.email { color:#ffff00 !important; background: url(emailLink.png) center right no-repeat; padding-right:19px;}
+
+hr {color:#bb8855; height:3px;}
+
+h1,h2,h3,h4 {padding:0; margin:0; text-decoration:none; font-weight: bold; font-family:"Roughedge","Times New Roman","Georgia", serif}
+h1 {padding-left: 0em; font-size:28pt; margin: 4px; padding-top:1em; text-align:center;} /* text-transform: uppercase; } */
+h2 {padding-left: 0em; font-size:20pt; margin: 3px; padding-top:1em; text-align:center;} /* text-transform: uppercase; } */
+h3 {padding-left: 2em; font-size:18pt; margin: 2px; }
+h4 {padding-left: 3em; font-size:16pt; margin: 2px; }
+
+/* p {display:block; border:solid 1px red; padding-bottom: 4em;} */
+p {margin-left:1em; margin-right:1em; text-align:left; text-decoration:none; font-size:125%;}
+p.preface {margin-left:5em; margin-right:5em; font-style:oblique; text-align:justify; text-decoration:none; }
+
+p.dropcap:first-letter {font-size:150%; float:left; font-weight:bold;}
+
+span.quote:before {content: open-quote;}
+span.quote:after {content: close-quote;}
+span.quote {font-style:italic; font-weight: bold;}
+
+span.blockquote:before {content:open-quote; font-size:120%; font-weight:bold;}
+span.blockquote:after {content: close-quote; font-size:120%; font-weight:bold;}
+span.blockquote {display:block; margin:10px 1em 10px 1em; padding: 0 1em 0 1em; background-color:#bb8855; border:solid 1px #aa7744;}
+
+span.afrikaans {font-style:oblique; font-family: "Lucida Console","Courier New",monospace}
+span.upper {text-transform: uppercase;}
+
+span.image{background-color:#c09060; display:table; padding: 5px; margin: 5px auto; text-align:center; font-style:normal; font-weight:bold; font-family:"Arial","Veranda",sans-serif}
+span.imageLeft {background-color:#c09060; display:block; padding:5px; margin: 5px; float:left; text-align:center; font-style:normal; font-weight:bold; font-family:"Arial","Veranda",sans-serif}
+span.imageRight {background-color:#c09060; display:block; padding:5px; margin: 5px; float:right; text-align:center; font-style:normal; font-weight:bold; font-family:"Arial","Veranda",sans-serif}
+
+.nofloat {clear:both;}
+
+/*
+ul,ol {padding-top:5px; margin-top:0;}
+*/
+
+
+

@@ -1,0 +1,76 @@
+
+
+filterRules = {
+    #---------------------------------------------------------------------------
+    'joe.blogs+webLogs@gmail.com':
+    {
+        'name': 'Joe Blogs',
+        'matchRules':
+        [
+            '.*',   # All log lines
+        ],
+        'countRules':
+        [
+            '"GET / .*www\.example\.com ',
+            '"GET / .* example\.com ',
+            '"GET / .*demo\.example\.com ',
+
+            '"GET /index\. .*www\.example\.com ',
+            '"GET /index\. .* example\.com ',
+            '"GET /index\. .*demo\.example\.com ',
+        ]
+    },
+
+    #---------------------------------------------------------------------------
+    'joe.blogs+test@gmail.com':
+    {
+        'name': 'Tester Jones',
+        'matchRules':
+        [
+            'pickles',
+            'apples',
+            'bg',
+        ],
+        'countRules':
+        [
+        ]
+    },
+
+    #---------------------------------------------------------------------------
+    'joe.blogs+mf@gmail.com':
+    {
+        'name': 'MF',
+        'matchRules':
+        [
+            '"GET /mf/.*demo\.example\.com ',    # Match all lines in the /mf/ folder in demo.example.com
+        ],
+        'countRules':
+        [
+            '"GET /mf/Miphoto\.html.*demo\.example\.com ',
+            '"GET /mf/mfnsm\.html.*demo\.example\.com ',
+        ]
+    },
+    #---------------------------------------------------------------------------
+}
+
+#===============================================================================
+scriptAdmin = {
+    'name': 'Joe BLogs',
+    'email': 'joe.blogs+scriptAdmin@gmail.com'
+}
+
+smtpCreds = {
+    'host': 'smtp.example.com',
+    'port': 587,
+    'user': 'gjytfdd@example.com',
+    'fromAddr': 'logGen@example.com',
+    'fromName': 'ExampleDemo'
+}
+
+ftpCreds  = {
+    'host': '3jh23g4jg.example.com',
+    'user': 'khjg34fkh34fk'
+}
+
+#===============================================================================
+

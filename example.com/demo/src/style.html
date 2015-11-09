@@ -1,0 +1,130 @@
+{#<!--#}{% extends "/_template.html" %}
+{% block origTitle %}{#-->#}Title{#<!--#}{% endblock %}
+{% block body %}{#-->#}
+
+
+<!-- This is a way to add a SMALL amount of page specifc CSS -->
+<style type='text/css'>
+ .help {color: #44f;}
+</style>
+
+
+<h1>Header One</h1>
+<h2>Header Two</h2>
+<h3>Header Three</h3>
+<h4>Header Four</h4>
+
+<p class="preface">
+Proin <span class='help'>preface paragraph</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies. 
+</p>
+
+<p>
+Aenean <span class='help'>normal paragraph</span> Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales <span class='help'>normal link</span> <a href="">normal link</a> tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean <span class='help'>external link</span> <a class="external" href="">external link</a> ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi <span class='help'>email link</span> <a class="email" href="">email@address.com</a> enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies. 
+</p>
+
+<p class="dropcap">
+Loreum <span class='help'>paragraph with drop cap</span> ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies. 
+</p>
+
+Morbi <span class='help'>text that is not in a &lt;P&gt; tag</span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.
+
+<hr>
+
+<p class="preface dropcap">
+Lorem ipsum <span class='help'>preface paragraph with drop cap</span>  dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies. 
+</p>
+
+<p>
+Curabitur <span class='help'>span modifications</span> lorem ipsum <span class='help'>normal quoted text</span> <span class="quote">a quoted normal piece of text</span> dolor sit amet <span class='help'>afrikaans text</span> <span class='afrikaans'>afrikaans text</span> dolor sit amet, consectetur adipiscing elit. Quisque <span class='help'>UPPER CASE TEXT</span> <span class="upper">Upper Case Text</span> mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales <span class='help'>quoted afrikaans text</span><span class="quote afrikaans">quoted afrikaans</span> tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet: <span class="blockquote">Elementum sodales arcu <span class='help'>a block quoted piece of text</span> semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien.</span> Quisque ut urna odio. Praesent eu metus nisi,in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies. 
+</p>
+
+<hr>
+
+<!-- Just an image -->
+<span class='help'>just a raw image link &lt;img src="image.gif"&gt;</span>
+<img src="styleLarge.png">
+
+<hr>
+
+<!-- Paragraph with an image and caption -->
+<p>
+Eleifend <span class='help'>image with caption &lt;span class="image" <b><u>style="width:355px"</u></b>&gt;&lt;img src="image.gif"&gt;Image Caption&lt;/span&gt; <i>(make the width 10px more then the image width. Right-click and properties to discove the width)</i></span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.
+
+<span class="image" style="width:355px"><img src="styleLarge.png">Image Caption is over here eleifend ac ornare ac, viverra at sapien.</span>
+
+ Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie.</p> 
+
+<p>Curabitur condimentum rutrum ipsum quis ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.</p>
+
+
+<hr>
+
+<!-- Paragraph with a left floating image and caption -->
+<p>
+Sapien <span class='help'>left floating image &lt;span class="imageLeft" <b><u>style="width:355px"</u></b>&gt;&lt;img src="image.gif"&gt;Image Caption&lt;/span&gt; <i>(make the width 10px more then the image width. Right-click and properties to discove the width)</i></span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.
+<span class="imageLeft" style="width:355px"><img src="styleLarge.png">Image Caption is over here</span>
+ Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie.</p> 
+
+<p>Curabitur condimentum rutrum ipsum quis ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.</p>
+
+<hr>
+
+<p>Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies.
+</p>
+
+<p class="nofloat">Convallis <span class='help'>paragraph starting after the image using: &lt;p class="nofloat"&gt;</span> pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed. Morbi enim risus, eleifend ac ornare ac, viverra at sapien. Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies.</p>
+
+<hr>
+
+<!-- Paragraph with a right floating image and caption-->
+<p>
+Adipiscing <span class='help'>right floating image &lt;span class="imageRight" <b><u>style="width:300px"</u></b>&gt;&lt;img src="image.gif"&gt;Image Caption&lt;/span&gt; <i>(make the width 10px more then the image width)</i></span> lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.
+
+<span class="imageRight" style="width:300px"><img src="styleLarge.png"><br>Image Caption is over here luctus sapien id massa feugiat ac tempor leo posuere</span>
+
+Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula.</p>
+
+<p>Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula. Aenean ornare ultricies ligula, sit amet semper sapien semper pretium. Praesent aliquam convallis nulla, ac sodales arcu elementum sed.</p>
+
+<hr>
+
+<p>Curabitur condimentum rutrum ipsum quis ultricies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit.</p>
+
+<p> Quisque ut urna odio. Praesent eu metus nisi, in luctus est. Donec pulvinar sagittis molestie. Curabitur condimentum rutrum ipsum quis ultricies.
+</p>
+
+<hr class="nofloat">
+<span class='help'>&lt;HR&gt; started after float image with: &lt;hr class="nofloat"&gt;</span>
+
+<!-- Buleted lists -->
+<p>
+Quisque <span class='help'>here is an ordered list</span>:
+    <ol>
+    <li>Sodales <span class='help'>this is the first item</span> ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id</li>
+    <li>Posuere <span class='help'>this is the second item.</span></li>
+    <li>Adipiscing <span class='help'>this is the third item</span> obortis purus posuere lacus iaculis non rutrum velit fringilla.</li>
+    </ol>
+</p>
+
+<p>
+<span class='help'>Here is an unordered list, which then contains some sub lists:</span>
+    <ul>
+    <li>Pellentesque <span class='help'>this is the first item</span> ipsum dolor sit amet, consectetur adipiscing elit. Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor. Morbi lobortis purus posuere lacus iaculis non rutrum velit fringilla. Aenean in lectus velit. Pellentesque luctus sapien id</li>
+    <li>Morbi <span class='help'>this is the second item:</span>
+        <ol>
+        <li>Tincidunt<span class='help'>one</span></li>
+        <li>Posuere<span class='help'>two</span></li>
+            <ul>
+            <li>Fiddle</li>
+            <li>Diddle</li>
+            <li>Dee</li>
+            </ul>
+        <li>ultricies<span class='help'>this is the third item</span> obortis purus posuere lacus iaculis non rutrum velit fringilla.</li>
+        </ol>
+    </li>
+    <li>Fringilla. Aenean in lectus velit. Pellentesque luctus sapien id massa feugiat ac tempor leo posuere. Curabitur nisl lectus, gravida et bibendum a, tristique tempor ligula.</li>
+    <li>Quisque mattis magna sed ante semper a tincidunt sapien molestie. Proin vel sodales tortor.</li>
+    </ul>
+</p>
+
+{#<!--#}{% endblock %}{#-->#}
